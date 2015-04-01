@@ -28,13 +28,13 @@ load.all.libs()
 #         dir.base="/chiswick/data/ncooper/ImmunochipReplication/",
 
 
-auxdirI <- "/chiswick/data/ncooper/vTest/preRunAnnotFiles"
+auxdirI <- "/chiswick/data/ncooper/plumbCNV_Example/preRunAnnotFiles"
 
-dir_rawI <- "/chiswick/data/ncooper/vTest/genomeStudioRawFiles"
+dir_rawI <- "/chiswick/data/ncooper/plumbCNV_Example/genomeStudioRawFiles"
 
-dir_baseI <- "/chiswick/data/ncooper/vTest/pipesDisease"
+dir_baseI <- "/chiswick/data/ncooper/plumbCNV_Example/pipesDisease"
 
-s.supI <- "/chiswick/data/ncooper/vTest/genomeStudioRawFiles/lab1dataset.txt.tar.gz"   #preRunAnnotFiles/snpdata.map"
+s.supI <- "/chiswick/data/ncooper/plumbCNV_Example/genomeStudioRawFiles/lab1dataset.txt.tar.gz"   #preRunAnnotFiles/snpdata.map"
 
 gsfI <- TRUE #FALSE
 
@@ -135,7 +135,7 @@ settings <- c(chip.settings,base.settings,snp.settings,samp.settings,pca.setting
 ###################
 
 
-dir <- make.dir("/chiswick/data/ncooper/vTest/pipesDisease/")
+dir <- make.dir("/chiswick/data/ncooper/plumbCNV_Example/pipesDisease/")
 
 
 if(plumber) {
