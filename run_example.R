@@ -1,50 +1,64 @@
 
-suffix <- 1
-metabo <- F
+# install latest versions of packages if not already present #
+# packages last updated May 6th, 2015.
+# install.packages("humarray_1.0.0.tar.gz",repos=NULL)
+# install.packages("reader")
+# install.packages("NCmisc")
+# install.packages("bigpca")
+# ensure that you are using R3.2 or higher, and corresponding up to date versions of bioConductor.
+
+### DEFINE BASE DIRECTORIES ###
+base.directory <- "/chiswick/data/ncooper/" # chance this to your own directory that contains the directory 'plumbCNV_Example'
+scr.dir <- "~/github/plumbCNV/" # location of the plumbCNV R scripts on your system
+###############################
+
+## basic preferences ##
+suffix <- 1   # suffix for results file
+metabo <- F    
 plumber <- T
 dgv.valid <- F
 samp.excl <- F
 eval <- F
-my.st <- 0
-my.end <- 6
-do.cnv <- T
-comp <- F
-samp.set <- "light"
-pca.set <- 12
-restore <- F
-sex.correct <- F
-q.cores <- 100 #NA
-hmm.file <- "/chiswick/data/ncooper/ImmunochipFamilies/ANNOTATION/hh0+.hmm"
+my.st <- 0    # step to start at, zero unless restarting pipeline midway
+my.end <- 6   # step to end, 6, unless wanting to stop/pause pipeline before the end
+do.cnv <- T    # do CNV QC
+comp <- F      # TRUE means more stringent sample QC
+samp.set <- "light"  
+pca.set <- 12   # number of principle components to correct for
+restore <- F     # when pipeline has been previously run using the same dataset, this will use any possible existing files instead of creating new ones
+sex.correct <- F   # whether to apply an intensity correction for sex
+q.cores <- 0# 100 #NA   # number of cores to use if you are using a SunGrid cluster
+hmm.file <- "hh550.hmm" # hmm file to use with PennCNV
 
 library(reader); library(bigpca); library(NCmisc); library(humarray)
-#source("/chiswick/data/ncooper/ImmunochipReplication/Scripts/FunctionsCNVAnalysis.R")
-source("~/github/plumbCNV/FunctionsCNVAnalysis.R")
+
+source(cat.path(scr.dir,"FunctionsCNVAnalysis.R"))
+
 load.all.libs()
-#source("~/github/plumbCNV/geneticsFunctions.R")
 
+## set up the main directories to be used by the pipeline ##
 
+auxdirI <- cat.path(base.directory,"/plumbCNV_Example/preRunAnnotFiles") # annotation files
 
-#plumbCNV(dir.raw="/ipswich/data/Immunochip/FinalReports/",
-#         dir.base="/chiswick/data/ncooper/ImmunochipReplication/",
+dir_rawI <- cat.path(base.directory,"/plumbCNV_Example/genomeStudioRawFiles") # raw data in genome studio format
+ 
+dir_baseI <- cat.path(base.directory,"/plumbCNV_Example/pipesDisease")  # base directory for the current project
 
+s.supI <- cat.path(base.directory,"/plumbCNV_Example/genomeStudioRawFiles/lab1dataset.txt.tar.gz")   #preRunAnnotFiles/snpdata.map"
 
-auxdirI <- "/chiswick/data/ncooper/plumbCNV_Example/preRunAnnotFiles"
+gsfI <- TRUE #FALSE  # whether to get SNP and SAMPLE IDs from the genome studio file, rather than separate annotation files
 
-dir_rawI <- "/chiswick/data/ncooper/plumbCNV_Example/genomeStudioRawFiles"
-
-dir_baseI <- "/chiswick/data/ncooper/plumbCNV_Example/pipesDisease"
-
-s.supI <- "/chiswick/data/ncooper/plumbCNV_Example/genomeStudioRawFiles/lab1dataset.txt.tar.gz"   #preRunAnnotFiles/snpdata.map"
-
-gsfI <- TRUE #FALSE
+# modify these parameters below if this does not fit your system specs #
+# q.cores is set to 0 (do not use SunGrid to run pennCNV)
+# n.cores is set to 22 (utilise up to 22 server cores for long calculations that can be done in parallel)
 
 
 ##############
 ## SETTINGS ##
 ##############
 
-#chip.settings <- list(dir.raw=dir_rawI,dir.base=dir_baseI,snp.support=s.supI,
-#                      gsf=gsfI,aux.files.dir=auxdirI)
+# define settings for the run in subgroups using lists #
+
 chip.settings <- list(dir.raw=dir_rawI,dir.base=dir_baseI,snp.support=s.supI,
                       gsf=gsfI,aux.files.dir=auxdirI)
 
@@ -60,7 +74,7 @@ base.settings <- list(dt.name="datatracker",
                       build="hg18",erase.previous=F,verbose=F)
 
 
-penn.settings <- list(hmm=hmm.file,relative=F,run.manual=F,print.cmds=F,q.cores=q.cores,
+penn.settings <- list(hmm=hmm.file,relative=F,run.manual=F,print.cmds=F,q.cores=0,
                       grid.id="all.q",cluster.fn="q.cmd",use.penn.gc=F)
 
 
@@ -135,13 +149,12 @@ settings <- c(chip.settings,base.settings,snp.settings,samp.settings,pca.setting
 ###################
 
 
-dir <- make.dir("/chiswick/data/ncooper/plumbCNV_Example/pipesDisease/")
+dir <- make.dir(cat.path(base.directory,"/plumbCNV_Example/pipesDisease/"))
 
 
 if(plumber) {
   if(samp.excl) {
     ## add other sample exclusion ##
-#    extra.excl <- "/home/ncooper/Documents/necessaryfilesICHIP/excl.samples.support.txt"
     system(paste("cp",extra.excl,dir$excl))
   }  
   cnvResult <- plumbcnv(settings,start.at=my.st,pause.after=my.end,restore.mode=restore,
@@ -152,27 +165,3 @@ if(plumber) {
 Header("CNVs called:")
 prv(cnvResult) # show a preview of the object containing the called CNVs
 
-# test 100kb overlaps
-if(F) {
-big.summary <- do.CNV.all.overlaps.summary(cnvResult[[1]],dir,comps=c(4:5),dbs=1:3,len.lo=1000, len.hi=5000000,min.sites=6,n.cores=1)
-print(pheno.ratios.table(dir,sum.table=summary.counts.table(big.summary)))
-DT <- read.data.tracker(dir)
-qs.results <- process.quality.scores(DT,suffix,dir,n.pcs=pca.set)
-final.tables <- compile.qs.results.to.cc.toptable(qs.results,dir,suffix,cnvResult)
-
-LL <- c(0,10000,50000,100000,200000,300000,400000,500000,1000000,2000000,3000000,4000000)
-# test case:controls for different length and QS thresholds
-
-LL <- c(0,1000*c(200,2000))
-LLB <- c(LL[-1],250000000)
- 
-length.analysis.suf(LL,dir,cnvResult,suffix,thr.col="score",cnts=c(9238,6524),upper.thr=LLB)
-
-#length.analysis(LL,dir,cnvResult,suffix,del.thr=.95,dup.thr=.75)
-
-
-#plot.all.samples.for.cnv(dir,reg="S21",dup=F,suffix="98")
-
-
-
-}
