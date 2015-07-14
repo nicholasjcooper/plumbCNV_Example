@@ -1,5 +1,0 @@
-/chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p2/ID0007.txt
-/chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p2/ID0009.txt
-/chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p2/ID0010.txt
-/chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p2/ID0011.txt
-/chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p2/ID0013.txt

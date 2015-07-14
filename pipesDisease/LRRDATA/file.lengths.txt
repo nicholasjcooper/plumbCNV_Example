@@ -1,2 +1,0 @@
-  920281 lab1dataset.txt.tar.gz.LRR.dat
-  613521 lab2dataset.txt.tar.gz.LRR.dat
