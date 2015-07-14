@@ -1,0 +1,4 @@
+chr22:28281650-28288327       numsnp=13     length=6,678       state1,cn=0 /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p11/ID0054.txt startsnp=imm_22_28281650 endsnp=imm_22_28288327
+chr2:185114776-185153675      numsnp=89     length=38,900      state2,cn=1 /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p16/ID0073.txt startsnp=imm_2_185114776 endsnp=imm_2_185153675
+chr2:100291831-100295504      numsnp=18     length=3,674       state6,cn=4 /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p3/ID0015.txt startsnp=imm_2_100291831 endsnp=imm_2_100295504
+chr9:122892486-122913474      numsnp=37     length=20,989      state2,cn=1 /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p5/ID0028.txt startsnp=imm_9_122892486 endsnp=imm_9_122913474

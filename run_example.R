@@ -38,13 +38,13 @@ load.all.libs()
 
 ## set up the main directories to be used by the pipeline ##
 
-auxdirI <- cat.path(base.directory,"/plumbCNV_Example/preRunAnnotFiles") # annotation files
+auxdirI <- paste0(base.directory,"plumbCNV_Example/preRunAnnotFiles") # annotation files
 
-dir_rawI <- cat.path(base.directory,"/plumbCNV_Example/genomeStudioRawFiles") # raw data in genome studio format
+dir_rawI <- paste0(base.directory,"plumbCNV_Example/genomeStudioRawFiles") # raw data in genome studio format
  
-dir_baseI <- cat.path(base.directory,"/plumbCNV_Example/pipesDisease")  # base directory for the current project
+dir_baseI <- paste0(base.directory,"plumbCNV_Example/pipesDisease")  # base directory for the current project
 
-s.supI <- cat.path(base.directory,"/plumbCNV_Example/genomeStudioRawFiles/lab1dataset.txt.tar.gz")   #preRunAnnotFiles/snpdata.map"
+s.supI <- paste0(base.directory,"plumbCNV_Example/genomeStudioRawFiles/lab1dataset.txt.tar.gz")   #preRunAnnotFiles/snpdata.map"
 
 gsfI <- TRUE #FALSE  # whether to get SNP and SAMPLE IDs from the genome studio file, rather than separate annotation files
 
@@ -97,7 +97,7 @@ if(samp.set=="none") {
   if(samp.set=="light") {
     
     samp.settings <- list(nSD=3.5,mean.thr=c("-3.5SD","+3.5SD"),dlrs.thr=c(NA,"+3.5SD"),gc.thr=c("-3.5SD","+3.5SD"),
-                          badPlateThresh=0.40,skip.chr.ab=F,lob=2.5,hib=3,pctile.bound=0.01,cohort.pc.correct=F,
+                          badPlateThresh=0.40,skip.chr.ab=T,lob=3,hib=4,pctile.bound=0.005,cohort.pc.correct=F,
                           batch="plate",other.batch=list(),
                           lrr.report=T,chr.ab.report=T,plate.report=T)
   } else {
@@ -149,7 +149,7 @@ settings <- c(chip.settings,base.settings,snp.settings,samp.settings,pca.setting
 ###################
 
 
-dir <- make.dir(cat.path(base.directory,"/plumbCNV_Example/pipesDisease/"))
+dir <- make.dir(paste0(base.directory,"plumbCNV_Example/pipesDisease/"))
 
 
 if(plumber) {

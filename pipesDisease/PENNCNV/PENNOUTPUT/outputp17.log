@@ -1,0 +1,18 @@
+NOTICE: All program notification/warning messages that appear in STDERR will be also written to log file /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNOUTPUT/outputp17.log
+NOTICE: Reading marker coordinates and population frequency of B allele (PFB) from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/BAF.pfb ... Done with 14344 records
+NOTICE: Reading LRR and BAF values for from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p17/ID0077.txt ... Done with 14344 records in 22 chromosomes
+NOTICE: Median-adjusting LRR values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p17/ID0077.txt by 0.0008
+NOTICE: Median-adjusting BAF values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p17/ID0077.txt by 0.0374
+NOTICE: quality summary for /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p17/ID0077.txt: LRR_mean=-0.0012 LRR_median=0.0000 LRR_SD=0.0682 BAF_mean=0.5043 BAF_median=0.5000 BAF_SD=0.0487 BAF_DRIFT=0.000000 WF=-0.0081 GCWF=-0.0000
+NOTICE: Reading LRR and BAF values for from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p17/ID0078.txt ... Done with 14344 records in 22 chromosomes
+NOTICE: Median-adjusting LRR values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p17/ID0078.txt by -0.0006
+NOTICE: Median-adjusting BAF values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p17/ID0078.txt by 0.0344
+NOTICE: quality summary for /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p17/ID0078.txt: LRR_mean=-0.0018 LRR_median=0.0000 LRR_SD=0.0710 BAF_mean=0.5053 BAF_median=0.5000 BAF_SD=0.0497 BAF_DRIFT=0.000000 WF=-0.0093 GCWF=-0.0052
+NOTICE: Reading LRR and BAF values for from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p17/ID0079.txt ... Done with 14344 records in 22 chromosomes
+NOTICE: Median-adjusting LRR values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p17/ID0079.txt by -0.0055
+NOTICE: Median-adjusting BAF values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p17/ID0079.txt by 0.0311
+NOTICE: quality summary for /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p17/ID0079.txt: LRR_mean=-0.0001 LRR_median=0.0000 LRR_SD=0.0618 BAF_mean=0.5040 BAF_median=0.5000 BAF_SD=0.0412 BAF_DRIFT=0.000000 WF=0.0095 GCWF=0.0038
+NOTICE: Reading LRR and BAF values for from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p17/ID0080.txt ... Done with 14344 records in 22 chromosomes
+NOTICE: Median-adjusting LRR values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p17/ID0080.txt by 0.0000
+NOTICE: Median-adjusting BAF values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p17/ID0080.txt by 0.0360
+NOTICE: quality summary for /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p17/ID0080.txt: LRR_mean=-0.0013 LRR_median=0.0000 LRR_SD=0.0583 BAF_mean=0.5054 BAF_median=0.5000 BAF_SD=0.0512 BAF_DRIFT=0.000000 WF=0.0086 GCWF=0.0052

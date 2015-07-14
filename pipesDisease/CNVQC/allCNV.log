@@ -1,0 +1,28 @@
+
+@----------------------------------------------------------@
+|        PLINK!       |     v1.07      |   10/Aug/2009     |
+|----------------------------------------------------------|
+|  (C) 2009 Shaun Purcell, GNU General Public License, v2  |
+|----------------------------------------------------------|
+|  For documentation, citation & bug-report instructions:  |
+|        http://pngu.mgh.harvard.edu/purcell/plink/        |
+@----------------------------------------------------------@
+
+Web-based version check ( --noweb to skip )
+Recent cached web-check found...Problem connecting to web
+
+Writing this text to log file [ allCNV.log ]
+Analysis started: Tue Jul 14 11:26:07 2015
+
+Options in effect:
+	--cnv-list allCNV.cnv
+	--cnv-make-map
+	--out allCNV
+
+
+Reading segment list (CNVs) from [ allCNV.cnv ]
+Writing new MAP file to [ allCNV.cnv.map ]
+Wrote 12 unique positions to file
+
+Analysis finished: Tue Jul 14 11:26:07 2015
+

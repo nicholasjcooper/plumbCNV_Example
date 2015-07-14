@@ -1,0 +1,46 @@
+
+@----------------------------------------------------------@
+|        PLINK!       |     v1.07      |   10/Aug/2009     |
+|----------------------------------------------------------|
+|  (C) 2009 Shaun Purcell, GNU General Public License, v2  |
+|----------------------------------------------------------|
+|  For documentation, citation & bug-report instructions:  |
+|        http://pngu.mgh.harvard.edu/purcell/plink/        |
+@----------------------------------------------------------@
+
+Web-based version check ( --noweb to skip )
+Recent cached web-check found...Problem connecting to web
+
+Writing this text to log file [ plink.log ]
+Analysis started: Tue Jul 14 11:26:07 2015
+
+Options in effect:
+	--cfile plink
+	--cnv-check-no-overlap
+	--allow-no-sex
+
+Reading marker information from [ plink.cnv.map ]
+12 (of 12) markers to be included from [ plink.cnv.map ]
+Reading individual information from [ plink.fam ]
+Reading pedigree information from [ plink.fam ] 
+97 individuals read from [ plink.fam ] 
+97 individuals with nonmissing phenotypes
+Assuming a disease phenotype (1=unaff, 2=aff, 0=miss)
+Missing phenotype value is also -9
+54 cases, 43 controls and 0 missing
+50 males, 47 females, and 0 of unspecified sex
+
+Reading segment list (CNVs) from [ plink.cnv ]
+No overlapping samples found
+4 mapped to a person, of which 4 passed filters
+4 of 4 mapped as valid segments
+ CopyN Case/Control
+     0        1 / 0
+     1        0 / 2
+     4        0 / 1
+
+Writing per-individual summary to [ plink.cnv.indiv ]
+Writing positional summary to [ plink.cnv.summary ]
+
+Analysis finished: Tue Jul 14 11:26:07 2015
+

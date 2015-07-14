@@ -1,0 +1,47 @@
+
+@----------------------------------------------------------@
+|        PLINK!       |     v1.07      |   10/Aug/2009     |
+|----------------------------------------------------------|
+|  (C) 2009 Shaun Purcell, GNU General Public License, v2  |
+|----------------------------------------------------------|
+|  For documentation, citation & bug-report instructions:  |
+|        http://pngu.mgh.harvard.edu/purcell/plink/        |
+@----------------------------------------------------------@
+
+Web-based version check ( --noweb to skip )
+Recent cached web-check found...Problem connecting to web
+
+Writing this text to log file [ rareDUP.log ]
+Analysis started: Tue Jul 14 11:26:08 2015
+
+Options in effect:
+	--cfile rareDUP
+	--segment-group
+	--out rareDUP
+	--cnv-overlap 0.5
+	--allow-no-sex
+
+Reading marker information from [ rareDUP.cnv.map ]
+3 (of 3) markers to be included from [ rareDUP.cnv.map ]
+Reading individual information from [ rareDUP.fam ]
+Reading pedigree information from [ rareDUP.fam ] 
+1 individuals read from [ rareDUP.fam ] 
+1 individuals with nonmissing phenotypes
+Assuming a disease phenotype (1=unaff, 2=aff, 0=miss)
+Missing phenotype value is also -9
+0 cases, 1 controls and 0 missing
+1 males, 0 females, and 0 of unspecified sex
+
+Reading segment list (CNVs) from [ rareDUP.cnv ]
+1 mapped to a person, of which 1 passed filters
+1 of 1 mapped as valid segments
+ CopyN Case/Control
+     4        0 / 1
+
+Writing per-individual summary to [ rareDUP.cnv.indiv ]
+Writing CNV summary to [ rareDUP.cnv.overlap ] 
+Found 0 unique overlapping sets of segments
+Writing positional summary to [ rareDUP.cnv.summary ]
+
+Analysis finished: Tue Jul 14 11:26:08 2015
+

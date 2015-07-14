@@ -1,0 +1,22 @@
+NOTICE: All program notification/warning messages that appear in STDERR will be also written to log file /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNOUTPUT/outputp7.log
+NOTICE: Reading marker coordinates and population frequency of B allele (PFB) from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/BAF.pfb ... Done with 14344 records
+NOTICE: Reading LRR and BAF values for from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0034.txt ... Done with 14344 records in 22 chromosomes
+NOTICE: Median-adjusting LRR values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0034.txt by 0.0006
+NOTICE: Median-adjusting BAF values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0034.txt by 0.0288
+NOTICE: quality summary for /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0034.txt: LRR_mean=-0.0017 LRR_median=0.0000 LRR_SD=0.0660 BAF_mean=0.5046 BAF_median=0.5000 BAF_SD=0.0493 BAF_DRIFT=0.000000 WF=0.0096 GCWF=0.0069
+NOTICE: Reading LRR and BAF values for from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0035.txt ... Done with 14344 records in 22 chromosomes
+NOTICE: Median-adjusting LRR values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0035.txt by 0.0008
+NOTICE: Median-adjusting BAF values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0035.txt by 0.0302
+NOTICE: quality summary for /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0035.txt: LRR_mean=-0.0023 LRR_median=0.0000 LRR_SD=0.0653 BAF_mean=0.5040 BAF_median=0.5000 BAF_SD=0.0478 BAF_DRIFT=0.000000 WF=0.0071 GCWF=0.0022
+NOTICE: Reading LRR and BAF values for from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0036.txt ... Done with 14344 records in 22 chromosomes
+NOTICE: Median-adjusting LRR values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0036.txt by 0.0005
+NOTICE: Median-adjusting BAF values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0036.txt by 0.0330
+NOTICE: quality summary for /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0036.txt: LRR_mean=-0.0008 LRR_median=0.0000 LRR_SD=0.0620 BAF_mean=0.5037 BAF_median=0.5000 BAF_SD=0.0449 BAF_DRIFT=0.000000 WF=-0.0066 GCWF=-0.0001
+NOTICE: Reading LRR and BAF values for from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0037.txt ... Done with 14344 records in 22 chromosomes
+NOTICE: Median-adjusting LRR values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0037.txt by 0.0001
+NOTICE: Median-adjusting BAF values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0037.txt by 0.0325
+NOTICE: quality summary for /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0037.txt: LRR_mean=-0.0010 LRR_median=0.0000 LRR_SD=0.0693 BAF_mean=0.5053 BAF_median=0.5000 BAF_SD=0.0452 BAF_DRIFT=0.000000 WF=-0.0084 GCWF=-0.0029
+NOTICE: Reading LRR and BAF values for from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0038.txt ... Done with 14344 records in 22 chromosomes
+NOTICE: Median-adjusting LRR values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0038.txt by 0.0025
+NOTICE: Median-adjusting BAF values for all autosome markers from /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0038.txt by 0.0356
+NOTICE: quality summary for /chiswick/data/ncooper/plumbCNV_Example/pipesDisease/PENNCNV/PENNRAWFILES/p7/ID0038.txt: LRR_mean=-0.0015 LRR_median=0.0000 LRR_SD=0.0671 BAF_mean=0.5047 BAF_median=0.5000 BAF_SD=0.0514 BAF_DRIFT=0.000000 WF=-0.0086 GCWF=-0.0032
