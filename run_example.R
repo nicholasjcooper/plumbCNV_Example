@@ -8,8 +8,8 @@
 # ensure that you are using R3.2 or higher, and corresponding up to date versions of bioConductor.
 
 ### DEFINE BASE DIRECTORIES ###
-base.directory <- "/chiswick/data/ncooper/" # chance this to your own directory that contains the directory 'plumbCNV_Example'
-scr.dir <- "~/github/plumbCNV/" # location of the plumbCNV R scripts on your system
+base.directory <- "/Users/ncooper/github/" # change this to your own directory that contains the directory 'plumbCNV_Example'
+scr.dir <- "/Users/ncooper/github/plumbCNV/" # location of the plumbCNV R scripts on your system
 ###############################
 
 ## basic preferences ##
@@ -69,8 +69,8 @@ base.settings <- list(dt.name="datatracker",
                       run.mode=c("scratch","normal","big")[1],
                       snp.run.mode=c("normal","skip","plink")[1],
                       manual.col.nums=NULL,plink.imp=F,fet.analysis.p=0.05,HD.mode=F,
-                      n.cores=22,low.ram=F,
-                      hide.penn.plink=T,penn.path="/usr/local/bin/penncnv64/",
+                      n.cores=1,low.ram=F,
+                      hide.penn.plink=T,penn.path="/usr/local/bin/penncnv/",
                       build="hg18",erase.previous=F,verbose=F)
 
 
