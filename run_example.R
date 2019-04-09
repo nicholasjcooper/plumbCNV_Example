@@ -69,8 +69,8 @@ base.settings <- list(dt.name="datatracker",
                       run.mode=c("scratch","normal","big")[1],
                       snp.run.mode=c("normal","skip","plink")[1],
                       manual.col.nums=NULL,plink.imp=F,fet.analysis.p=0.05,HD.mode=F,
-                      n.cores=1,low.ram=F,
-                      hide.penn.plink=T,penn.path="/usr/local/bin/penncnv/",
+                      n.cores=3,low.ram=F,
+                      hide.penn.plink=F,penn.path="/usr/local/bin/penncnv/",perl.path="/usr/local/bin/perl",
                       build="hg18",erase.previous=F,verbose=F)
 
 
